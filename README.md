@@ -26,7 +26,7 @@ Topics
 	* kube-scheduler.
 
 
-<img src="../images/master-slave-arch.png" width="800">
+<img src="images/master-slave-arch.png" width="800">
 
 ## Node
 
@@ -37,7 +37,7 @@ Each node has a Kubelet, which is an agent for managing the node and communicati
 	* kubelet : which communicates with the master.
 	* kube-proxy : a network proxy which reflects kubernetes networking service on each node.
 
-<img src="../images/node-pod-container.png" width="800">
+<img src="images/node-pod-container.png" width="800">
 
 ## Pod
 - A Pod is the basic building block of Kubernetes–the smallest and simplest unit in the Kubernetes object model that you create or deploy.
@@ -47,7 +47,7 @@ Each node has a Kubelet, which is an agent for managing the node and communicati
 - Example: if you have static web-app running inside a container in docker environment, in k8s that single container will run inside Pod.
 - Let's take a case where your application is made of multiple container ( client, server ) client in one container and server in different container than these two container can run inside your Pod and can communicate with each other.
 
-<img src="../images/multi-continer-pod.png" width="500">
+<img src="images/multi-continer-pod.png" width="500">
 
 ```
 kubectl create -f pod.yml
